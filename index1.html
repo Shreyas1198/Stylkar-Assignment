@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./CSS/style1.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/90c20c89a9.js" crossorigin="anonymous"></script>
+            </head>
+<body>
+    <section class="contact" id="phone">
+        <div class="heading">
+            <p>Testimonial</p>
+            <h2>What Clients Says?</h2>
+            <p class="p1">Nam libero tempore,cum soluta nobis est eligendi optio cumque nihil<br>
+                impedit quo minus id quod maxime
+            </p>
+            </div>
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonials">
+            <div class="content">
+                <div class="single-box" id="slide1">
+                    <div class="text">
+                        <p> "we are Creezy,a design and branding partners worldwide been working in his."
+                         </p>
+                    </div>
+                    <div class="img">
+                        <img src="./Photo/pexels-mentatdgt-1138903.jpg">
+                       </div>
+                       <div class="t1">
+                       <h5>-Eunice Spaulding</h5>
+                       <p>Creezy</p>
+                    </div>
+                </div>
+                <div class="single-box">
+                    <div class="text">
+                        <p> "we are Creezy,a design and branding partners worldwide been working in his"
+                         </p>
+                    </div>
+                    <div class="img">
+                        <img src="./Photo/pexels-mentatdgt-937481.jpg">
+                       </div>
+                       <div class="t1">
+                        <h5>-Eunice Spaulding</h5>
+                        <p>Creezy</p>
+                     </div>
+                </div>
+                <div class="single-box">
+                    <div class="text">
+                        <p> "we are Creezy,a design and branding partners worldwide been working in his."
+                         </p>
+                    </div>
+                    <div class="img">
+                        <img src="./Photo/pexels-mentatdgt-937483.jpg">
+                       </div>
+                       <div class="t1">
+                        <h5>-Eunice Spaulding</h5>
+                        <p>Creezy</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    var btn =document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide1");
+
+    btn[0].onclick =function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[1].onclick =function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[2].onclick =function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<3;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    </script>
+</body>
+</html>
